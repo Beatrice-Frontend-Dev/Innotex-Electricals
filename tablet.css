@@ -1,0 +1,418 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+html{
+  font-size: 62.5%;
+  color: rgb(21, 21, 21);
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  height: 8rem;
+  background-color: white;
+}
+
+.left-part,
+.middle-part,
+.right-part {
+  display: flex;
+  column-gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.phone{
+  font-size: 1.7rem;
+}
+
+.middle-part p{
+  letter-spacing: 5.5px;
+  word-spacing: 10px;
+  line-height: 35px;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.header-navs{
+  color: white;
+  background-color: black;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1.2rem 3rem;
+  list-style-type: none;
+}
+
+.nav-container li{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+li a{
+  color: white;
+}
+
+.header-sales-info{
+  background-color: #f3efef;
+}
+
+.sales-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.2rem 5rem;
+  list-style-type: none;
+}
+
+.sales-info li{
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+
+.hero{
+  position: relative;
+  height: 100vh;
+}
+
+.hero img{
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-writeup{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  row-gap: 1.5rem;
+}
+
+.hero-writeup p{
+  font-size: 2.9rem;
+  font-weight: 900;
+  text-align: center;
+  color: rgba(194, 13, 13, 0.92);
+}
+
+.button{
+  color: white;
+  font-weight: 600;
+  background-color: black;
+  padding: 1.5rem 2.3rem;
+  border: none;
+  border-radius: .7rem;
+}
+
+.button:hover{
+  background-color:  rgba(131, 11, 11, 0.92);
+}
+
+.celing-light{
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.heading1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding: 3rem;
+  color: rgba(194, 13, 13, 0.92);
+  font-weight: 800;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  background-color: #fff;
+}
+
+.celing-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 4rem;
+}
+
+.light{
+  background-color: #fff;
+  border: 1px solid gray;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  width: 38vw;
+}
+
+.light img	{
+width: 35vw;
+height: 50vh;
+}		
+
+.light h4,
+.light-box h4{
+  padding: 2.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.price{
+  font-weight: bold;
+  color: rgba(194, 13, 13, 0.92);
+  font-size: 1.9rem;
+  font-family: sans-serif;
+}
+
+.btn{
+  background-color: black;
+  color: #fff;
+  padding: .8rem 1.5rem;
+  margin: 1.3rem 0;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn:hover{
+  background-color: rgba(194, 13, 13, 0.92);
+  color: #fff;
+}
+
+.bubble-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6rem 5rem 0 5rem;
+}
+
+.bubble-talk{
+  background-color: #f3efef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.writeup-container{
+  background-color: white;
+  padding: 2rem 4rem;
+}
+
+.writeup-container .p1{
+  color: rgba(194, 13, 13, 0.92);
+  font-size: 2.6rem;
+  padding: 1.5rem 0;
+}
+
+.writeup-container .p2{
+  font-size: 1.9rem;
+  padding: 1.5rem 0;
+}
+
+.bubble-img{
+  background-color: aquamarine;
+  width: 60vw;
+  height: 100vh;
+}
+
+.bubble-img img{
+  width: 58vw;
+  height: 100vh;
+}
+
+
+.bestseller{
+  padding: 4rem 0;
+}
+
+.bestseller .p1{
+  width: 95%;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 30px;
+  padding: .5rem 6rem .5rem 6rem;
+  margin: 0 auto;
+}
+
+.lastp{
+  width: 95%;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 30px;
+  padding: .5rem 6rem .5rem 6rem;
+  margin-bottom: 4rem;
+}
+
+.bestseller-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 4rem;
+}
+
+.light-box{
+  background-color: #fff;
+  border: 1px solid gray;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  width: 38vw;
+}
+
+.light-box img{
+  height: 50vh;
+  width: 35vw;
+}
+
+.italic-word{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 1.45rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 4rem 6rem 2rem 9rem;
+}
+
+.read-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(136, 136, 136);
+  font-style: italic;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f5f1;
+  padding-top: 5rem;
+}
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5rem;
+  width: 85vw;
+  border: 1px solid gray;
+}
+
+.section1 h2{
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  padding-bottom: 3rem;
+}
+
+.section1 input{
+  width: 40vw;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.section1 input::placeholder{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.submit{
+  padding: 1rem 2rem;
+  background-color: rgba(194, 13, 13, 0.92);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: .6rem;
+  margin: 2rem 0;
+}
+
+.submit:hover{
+  background-color: black;
+}
+
+.section1 .p1{
+  font-size: 1.3rem;
+  padding: .6rem;
+  text-align: center;
+}
+
+.tandc{
+  font-size: 1.2rem;
+}
+
+.tandc a{
+  text-decoration: underline;
+}
+
+.section2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9rem 9rem 4rem 9rem;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer-links a{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #888888;
+}
+
+.footer-socials a{
+  font-size: 2.3rem;
+  color: #000;
+}
+
+.footer-socials a:hover{
+  color: rgba(194, 13, 13, 0.92);
+}
+
+.section3{
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 2rem 9rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.section3 a{
+  color: navy;
+}
